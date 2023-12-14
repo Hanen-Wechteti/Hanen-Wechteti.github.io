@@ -59,6 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .First_card {
+  min-width: 270px;
   width: 25%;
   margin-right: 4%;
   margin-bottom: 4%;
@@ -102,16 +103,28 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 200px;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 25px;
+}
+
 .header {
-  text-align: center;
   font-size: 2em;
   font-weight: bold;
   color: #6d8493;
-  text-align: center;
-  text-transform: uppercase;
   margin-bottom: 5px;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 15px;
+  width: 60%;
+}
+
+.ma_photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .trailer {

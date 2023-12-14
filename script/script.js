@@ -97,13 +97,22 @@ let seriesData = [
     }
 ];
 
-
 let header = document.querySelector('header');
+let flexContainer = document.createElement("div");
+flexContainer.className = "flex-container";
+header.append(flexContainer);
+
 
 let h1 = document.createElement("h1");
 h1.className = "header";
-h1.textContent = "Mes top 10 Series";
-header.appendChild(h1);
+h1.textContent = "Hanen's favorite Series: here you can find my collection of series! ";
+flexContainer.appendChild(h1);
+
+let imgMoi = document.createElement("img");
+imgMoi.className = "ma_photo";
+imgMoi.src ="assets/images/photo de moi github.jpg";
+imgMoi.alt = `photo de moi`;
+flexContainer.append(imgMoi);
 
 // Sélectionner le body du document
 const body = document.body;
